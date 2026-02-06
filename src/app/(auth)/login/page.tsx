@@ -1,29 +1,12 @@
-// import Button from "@/app/components/button/page";
-// import Input from "@/app/components/input/page";
-// function LoginPage(){
-//   return(
-//        <div className="flex min-h-screen items-center justify-center">
-//       <div className="w-full max-w-sm space-y-4 rounded-lg bg-white p-6 shadow">
-//         <h2 className="text-xl font-bold text-center">Login</h2>
-//         <Input placeholder="Email" />
-//         <Input type="password" placeholder="Password" />
-//         <Button
-//           label="Login"
-          
-//         />
-//       </div>
-//     </div>
-//   )
-// }
-// export default LoginPage;
-
-
 
 import Button from "@/app/components/button/page";
 import Input from "@/app/components/input/page";
 import Link from "next/link";
 
 function LoginPage() {
+
+
+  console.log(process.env.NODE_ENV);
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100">
       
@@ -62,3 +45,10 @@ function LoginPage() {
 }
 
 export default LoginPage;
+
+export function generateMetadata() {
+  return {
+    title: "Login - NextPractice",
+    description: "Access your account and explore our products.",
+  };
+} 

@@ -53,3 +53,11 @@ async function Page() {
 }
 
 export default Page;
+
+
+export function generateMetadata() {
+  return {
+    title: "Products - NextPractice",
+    description: "Explore our latest products.",
+  };
+} 

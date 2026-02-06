@@ -65,3 +65,12 @@ function RegisterPage() {
 }
 
 export default RegisterPage;
+
+
+
+export function generateMetadata() {
+  return {
+    title: "Register - NextPractice",
+    description: "Create a new account and explore our products.",
+  };
+} 
